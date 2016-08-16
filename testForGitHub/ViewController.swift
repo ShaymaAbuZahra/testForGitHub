@@ -13,7 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.greenColor()
-        
+        var label = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 100))
+        label.backgroundColor = UIColor.redColor()
+        label.text = "Hello there"
+        label.textColor = UIColor.whiteColor()
+        label.textAlignment = .Center
         // Do any additional setup after loading the view, typically from a nib.
     }
 
