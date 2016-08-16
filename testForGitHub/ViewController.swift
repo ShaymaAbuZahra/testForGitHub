@@ -18,6 +18,9 @@ class ViewController: UIViewController {
         label.text = "Hello there"
         label.textColor = UIColor.whiteColor()
         label.textAlignment = .Center
+        label.layer.cornerRadius = 10
+        label.clipsToBounds = true
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
