@@ -20,7 +20,12 @@ class ViewController: UIViewController {
         label.textAlignment = .Center
         label.layer.cornerRadius = 10
         label.clipsToBounds = true
+        self.view.addSubview(label)
         
+        var textfield = UITextField(frame: CGRect(x: 0, y: 110, width: self.view.frame.size.width, height: 50))
+        textfield.placeholder = "Enter name"
+        textfield.backgroundColor = UIColor.greenColor()
+        self.view.addSubview(textfield)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
